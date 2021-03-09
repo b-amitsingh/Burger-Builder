@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
-import Aux from '../../hoc/Auxiliary'
+import Aux from '../../hoc/Auxiliary/Auxiliary'
 import Burger from '../../components/Burger/Burger'
 import BuildControls from '../../components/Burger/BuildControls/BuildControls'
 import Modal from '../../components/UI/Modal/Modal'
 import OrderSummary from '../../components/Burger/OrderSummary/OrderSummary' 
 
 const INGREDIENT_PRICE = {
-    salad: 0.5,
-    cheese: 0.4,
-    meat: 1.3,
-    bacon: 0.7
+    salad: 30,
+    cheese: 30,
+    meat: 60,
+    bacon: 40
 }
 
 class BurgerBuilder extends Component {
@@ -20,7 +20,7 @@ class BurgerBuilder extends Component {
             cheese: 0,
             meat: 0
         }, 
-        totalPrice: 4,
+        totalPrice: 100,
         purchasable: false,
         purchasing: false
     }
